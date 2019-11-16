@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body{
+  color:#554659;
+  background-color: #f8f8f8;
+  font-family:'Roboto Slab',serif;
+}
+
+.navbar{
+  margin: 0;
+}
+
+/*一番最初の画像*/
+.bg{
+  background: url(https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg);
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+/*クラスbgのアニメーション*/
+@keyframes fadeIn{
+  0%{opacity:0}
+  100%{opacity:1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.my{
+  background: url(https://images.unsplash.com/photo-1505487985217-c1f95816212d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6491055a75d8ffa83dd072e10ac557a8&auto=format&fit=crop&w=1600&q=80);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+#about p{
+  color:aquamarine;
+}
+
+#content{
+  text-align:center;
+  padding-top: 35%;
+  padding-bottom: 10%;
+}
+
+#about,#portfolio,#contact,#skils{
+  padding-top: 65px;
+  text-align:center;
+}
+
+#h4{
+  text-align:center;
+  margin-top:30px;
+  margin-bottom:10px;
+}
+
+
+/*スキル*/
+
+#row{
+  padding-top:30px;
+  width:300px;
+  height:300px;
+  
+}
+
+h1,h2,h3,h4{
+  font-family:'Raleway',sans-esrif;
+}
+
+h1{
+  font-weight:700;
+  font-size: 38px;
+  color:beige;
+}
+
+.sub{
+  font-size: 15px;
+  font-weight:1000;
+  color:beige;
+}
+
+h2{
+  font-size: 15px;
+}
+
+p{
+  font-size:15px;
+}
+
+hr{
+  border:0;
+  height:0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  width: 400px;
+  max-width: 90%;
+}
+
+.fa-twitter{
+  color: skyblue;
+}
+.fa-facebook{
+  color: blue;
+}
+.fa-github{
+  color:black;
+}
+.fa-blogger{
+  color: FF6E00;
+}
+
+.description{
+  text-align:center;
+}
+
+.Kontakt{
+  text-align: center;
+}
+
+footer{
+  text-align:center;
+  margin-top :3%;
+}
+
+#img{
+  max-width:100%;
+}
+
+#green{
+  color:green;
+}
+
+#carousel{
+  padding-bottom:5%;
+  max-width:100%;
+
+}
+/* サービス */
+#service{
+  padding-bottom:20px;
+}
+
+.service{
+  text-align:center;
+}
+/* */
+
+/*　コーディングのところ*/
+#i{
+  padding-top:50px;
+}
+
+/*　スクロールしたらfade要素を与える*/
+.fadein{
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition : all 1000ms;
+}
+
+.fadein.scrollin{
+  opacity:1;
+  transform: translate(0,0);
+
+}
+
+@media screen and (min-width: 1001px) and (max-width:2500px){
+  #sampleCarousel{
+    max-width:70%;
+    margin:auto;
+    height:500px;
+    overflow: hidden;
+    background: #000;
+  }
+
+
+}
+/* カルーセル*/
+@media screen and (min-width:600px) and (max-width:1000px) {
+  #sampleCarousel{
+  max-width:50%;
+  margin:auto;
+  height:200px;
+  overflow:hidden;
+  background: #000;
+  }
+}
+
+@media screen and (max-width:599px){
+  #sampleCarousel{
+    max-width:90%;
+    margin:auto;
+    height:200px;
+    overflow:hidden;
+    background: #000;
+  }
+}
+
+
+
+/*カルーセルの画像にカーソルを当てると拡大 */
+#sampleCarousel img{
+  display:block;
+  transition-duration: 0.3s;
+  height:100%;
+  width:100%;
+}
+
+#sampleCarousel img:hover{
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  opacity:0.6;
+}
+
+#sampleCarousel img:hover:before{
+  content: "reda more";
+}
+/*ここまでカルーセル*/
+
+.click{
+  text-align:center;
+  margin-top:10px;
+}
+/*price */
+#table{
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+
+
+
+
+
+
